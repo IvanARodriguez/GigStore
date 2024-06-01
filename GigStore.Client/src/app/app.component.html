@@ -1,12 +1,19 @@
 @for(gig of gigs; track gig){
-  <div>
-    <div class="card">
-      <h2>{{ gig.name }}</h2>
-      <p>{{ gig.detail }}</p>
-      <p>${{ gig.price}}</p>
-      <button>Add To Cart</button>
-    </div>
-  </div>
-} @empty {
+  <mat-card class="gig-card">
+    <mat-card-header>
+      <mat-card-title>{{ gig.name }}</mat-card-title>
+      <mat-card-subtitle>{{ gig.price}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{gig.img}}" alt="Photo of {{gig.name}}">
+    <mat-card-content>
+      <p>
+        {{ gig.detail }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>ADD TO CART</button>
+    </mat-card-actions>
+  </mat-card>
+} @empty {  
   <h2>No Gig info</h2>
 }

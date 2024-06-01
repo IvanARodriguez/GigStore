@@ -1,7 +1,8 @@
 export class Gig {
-  id?:string
-  price?: number
-  name = "";
-  detail = "";
-  technologies: string[] = [];
+	id?: string;
+	price = '';
+	img = '';
+	name = '';
+	detail = '';
+	technologies: string[] = [];
 }

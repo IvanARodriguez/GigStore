@@ -9,12 +9,17 @@
   box-sizing: border-box;
 }
 
-.card{
+.gig-card{
   max-width: 270px;
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  gap: .5rem;
-  min-height: 400px;
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.241);
+  gap: 1rem
+}
+
+.gig-card-header-img{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.gig-card img{
+  margin: 1rem;
 }
